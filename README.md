@@ -17,7 +17,7 @@ komutlarını çalıştıp gerekli kütüphanelerin proye indirilmesini sağlaya
 <br/>
 
 **Not:** 
-xCode 12 ve daha sonraki versiyonlarda simulator üzerinden test etmek için, Vendor dizini içerisinde
+Xcode 12 ve daha sonraki versiyonlarda simulator üzerinden test etmek için, Vendor dizini içerisinde
 
 ```
 ./carthage-build.sh build --platform iOS
