@@ -1,26 +1,38 @@
-# Nasa_Rover_Photos
+Nasa Rover Photos
 
-Projeyi klonladıktan sonra, proje dizininde 
+## Requirements
 
+- iOS 12.0+
+- Xcode 12.1+
+- Swift 5+
+
+
+## Dependencies
+
+### Cocoapods
+
+run 'pod install' in terminal at project path
+
+```swift
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Messaging' 
 ```
-pod install
+
+### Carthage
+
+run 'make carthage_bootstrap' in terminal at project path
+
+```swift
+github "Alamofire/Alamofire" ~> 5.2
+github "onevcat/Kingfisher" ~> 5.0
+github "ninjaprox/NVActivityIndicatorView"
+github "ReactiveX/RxSwift" "6.0.0-rc.2"
 ```
 
-ve
-
-```
-make carthage_bootstrap
-```
-
-komutlarını çalıştıp gerekli kütüphanelerin proye indirilmesini sağlayabilirsiniz. 
-
-<br/>
-
-**Not:** 
-Xcode 12 ve daha sonraki versiyonlarda simulator üzerinden test etmek için, Vendor dizini içerisinde
+### Xcode 12+ : run in terminal at Vendor path
 
 ```
 ./carthage-build.sh build --platform iOS
 ```
 
-komutunu çalıştırmanız gerekebilir.
