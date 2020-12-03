@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" ~> 5.2
+github "onevcat/Kingfisher" ~> 5.0
+github "ninjaprox/NVActivityIndicatorView"
+github "ReactiveX/RxSwift" "6.0.0-rc.2"

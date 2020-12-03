@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CaQ-wd-tH1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Controller-->
+        <scene sceneID="oXR-ma-p5a">
+            <objects>
+                <viewController id="CaQ-wd-tH1" customClass="SplashController" customModule="Nasa_Rover_Photos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="So2-VC-pYC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashImage" translatesAutoresizingMaskIntoConstraints="NO" id="IrM-wo-C0U">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDS-jn-7uV">
+                                <rect key="frame" x="182" y="677" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZVL-uX-ms6"/>
+                                    <constraint firstAttribute="width" secondItem="EDS-jn-7uV" secondAttribute="height" id="tff-dt-jA7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tgW-Xr-WbP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IrM-wo-C0U" firstAttribute="leading" secondItem="tgW-Xr-WbP" secondAttribute="leading" id="47h-P9-DYv"/>
+                            <constraint firstItem="IrM-wo-C0U" firstAttribute="top" secondItem="So2-VC-pYC" secondAttribute="top" id="88x-0s-gJp"/>
+                            <constraint firstItem="EDS-jn-7uV" firstAttribute="centerY" secondItem="tgW-Xr-WbP" secondAttribute="centerY" multiplier="1.55" id="DfG-XM-uG7"/>
+                            <constraint firstAttribute="bottom" secondItem="IrM-wo-C0U" secondAttribute="bottom" id="Fcg-Z1-5cb"/>
+                            <constraint firstItem="tgW-Xr-WbP" firstAttribute="trailing" secondItem="IrM-wo-C0U" secondAttribute="trailing" id="K8I-nt-DEP"/>
+                            <constraint firstItem="EDS-jn-7uV" firstAttribute="centerX" secondItem="So2-VC-pYC" secondAttribute="centerX" id="aZ4-XJ-o91"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorContainer" destination="EDS-jn-7uV" id="cDK-r4-jcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVb-ZD-MFY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="-5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashImage" width="736" height="1308"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

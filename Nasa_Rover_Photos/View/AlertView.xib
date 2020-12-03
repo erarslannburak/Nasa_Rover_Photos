@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertView" customModule="Nasa_Rover_Photos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-qQ-BdO">
+                    <rect key="frame" x="52" y="365.5" width="310.5" height="175"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a24-xC-BXs">
+                            <rect key="frame" x="116" y="12" width="78" height="77.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="a24-xC-BXs" secondAttribute="height" id="LK5-jD-i2P"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hso-1F-whl">
+                            <rect key="frame" x="134" y="101.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8I-aq-s3N">
+                            <rect key="frame" x="24" y="130.5" width="262.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="a24-xC-BXs" firstAttribute="centerX" secondItem="BwE-qQ-BdO" secondAttribute="centerX" id="2du-RT-vQj"/>
+                        <constraint firstItem="a24-xC-BXs" firstAttribute="width" secondItem="BwE-qQ-BdO" secondAttribute="width" multiplier="0.25" id="498-v3-erP"/>
+                        <constraint firstItem="a24-xC-BXs" firstAttribute="top" secondItem="BwE-qQ-BdO" secondAttribute="top" constant="12" id="CA1-WS-3Z3"/>
+                        <constraint firstItem="v8I-aq-s3N" firstAttribute="centerX" secondItem="BwE-qQ-BdO" secondAttribute="centerX" id="Ow1-Mi-Suq"/>
+                        <constraint firstItem="Hso-1F-whl" firstAttribute="top" secondItem="a24-xC-BXs" secondAttribute="bottom" constant="12" id="dAA-cQ-Vac"/>
+                        <constraint firstItem="v8I-aq-s3N" firstAttribute="top" secondItem="Hso-1F-whl" secondAttribute="bottom" constant="8" id="giW-sy-xeD"/>
+                        <constraint firstAttribute="bottom" secondItem="v8I-aq-s3N" secondAttribute="bottom" constant="24" id="t5P-cn-f7o"/>
+                        <constraint firstItem="Hso-1F-whl" firstAttribute="centerX" secondItem="BwE-qQ-BdO" secondAttribute="centerX" id="xHd-py-lYm"/>
+                        <constraint firstItem="v8I-aq-s3N" firstAttribute="leading" secondItem="BwE-qQ-BdO" secondAttribute="leading" constant="24" id="zPT-UD-bw6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70285541373239424" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BwE-qQ-BdO" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.75" id="Rdh-0C-iXF"/>
+                <constraint firstItem="BwE-qQ-BdO" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="vkC-vz-dUc"/>
+                <constraint firstItem="BwE-qQ-BdO" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="xVJ-WU-cxT"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="BwE-qQ-BdO" id="H9Q-yI-rKh"/>
+                <outlet property="errorMessage" destination="v8I-aq-s3N" id="09J-n7-wzw"/>
+                <outlet property="errorTitle" destination="Hso-1F-whl" id="1qZ-Br-uVg"/>
+                <outlet property="imageView" destination="a24-xC-BXs" id="jhz-XH-Oaq"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="71.651785714285708"/>
+        </view>
+    </objects>
+</document>
